@@ -17,8 +17,8 @@ app.use(express.json());
 // MongoDB connection
 const mongoURI = "mongodb+srv://aswin_murali:Aswinmurali@cluster0.4xrsk.mongodb.net/todoDB?retryWrites=true&w=majority";
 mongoose.connect(mongoURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true
 }).then(() => console.log("Connected to MongoDB"))
   .catch(err => {
       console.error("Database connection error:", err);
